@@ -7,27 +7,26 @@ import {
   Header,
   Icon
 } from "semantic-ui-react";
-import { Link } from 'react-router-dom'
-import 'semantic-ui-css/semantic.min.css';
+import { Link } from "react-router-dom";
 
-class Shipping extends React.Component {
+class Payment extends React.Component {
 
     render() {
     return (
         <Grid textAlign="center" verticalAlign="middle" className="app">
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header as="h2" icon color="orange" textAlign="center">
-            <Icon name="envelope open" color="orange" />
-              Shipping!
+              <Icon name="credit card" color="orange" />
+              Enter your payment info!
             </Header>
             <Form size="large">
               <Segment stacked>
                 <Form.Input
                   fluid
-                  name="address"
-                  icon="address book"
+                  name="username"
+                  icon="user"
                   iconPosition="left"
-                  placeholder="Address"
+                  placeholder="Full Name"
                   onChange={this.handleChange}
                   type="text"
                 />
@@ -35,9 +34,9 @@ class Shipping extends React.Component {
                 <Form.Input
                   fluid
                   name="email"
-                  icon="map"
+                  icon="credit card"
                   iconPosition="left"
-                  placeholder="State"
+                  placeholder="Credit Card #"
                   onChange={this.handleChange}
                   type="email"
                 />
@@ -45,9 +44,9 @@ class Shipping extends React.Component {
                 <Form.Input
                   fluid
                   name="password"
-                  icon="map"
+                  icon="lock"
                   iconPosition="left"
-                  placeholder="Zip Code"
+                  placeholder="EXP Date"
                   onChange={this.handleChange}
                   type="password"
                 />
@@ -55,16 +54,16 @@ class Shipping extends React.Component {
                 <Form.Input
                   fluid
                   name="passwordConfirmation"
-                  icon="phone square"
+                  icon="repeat"
                   iconPosition="left"
-                  placeholder="Phone number"
+                  placeholder="CVV"
                   onChange={this.handleChange}
                   type="password"
                 />
   
-               <Link to='/payment'> <Button color="orange" fluid size="large">
+              <Link to='/app' > <Button color="orange" fluid size="large">
                  Submit
-                </Button> </Link>
+                </Button> </Link> 
               </Segment>
             </Form>
           </Grid.Column>
@@ -73,4 +72,4 @@ class Shipping extends React.Component {
     }
 }
 
-export default Shipping;
+export default Payment;

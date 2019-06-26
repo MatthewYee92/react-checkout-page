@@ -7,6 +7,7 @@ import {
   Header,
   Icon
 } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 
 class Register extends React.Component {
 
@@ -60,9 +61,9 @@ class Register extends React.Component {
                   type="password"
                 />
   
-                <Button color="orange" fluid size="large">
+              <Link to='/shipping' > <Button color="orange" fluid size="large">
                  Submit
-                </Button>
+                </Button> </Link> 
               </Segment>
             </Form>
           </Grid.Column>

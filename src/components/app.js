@@ -13,7 +13,7 @@ class App extends Component {
           <Grid textAlign="center" verticalAlign="middle" className="app">
             <Grid.Column style={{ maxWidth: 450 }}>
               <Header as="h2" icon color="orange" textAlign="center">
-                <Icon name="shopping cart" color="orange" />
+              <Link to='/app'><Icon name="shopping cart" color="orange" /> </Link>
                 It's time to checkout!
               </Header>
               <Message>
