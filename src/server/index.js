@@ -11,7 +11,7 @@ app.use(express.static('public'))
 app.get("/", (req, res) => {
   console.log("get success");
 
-  db.connection.query("SELECT * FROM items", function(err, results) {
+  db.connection.query("SELECT * FROM table", function(err, results) {
     if(err) return console.log(err)
     console.log(results[0].groceryitems);
     console.log('get connection working')
