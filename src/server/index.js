@@ -1,13 +1,11 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const db = require("../db/index");
-const bodyParser = require("body-parser")
-
+// const db = require("../db/index");
 
 // sending get request to server
 
-app.use(express.static(path.join(__dirname, '..', 'components', 'auth')))
+app.use(express.static('public'))
 
 
 app.get("/", (req, res) => {

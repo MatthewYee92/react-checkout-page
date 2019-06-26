@@ -7,7 +7,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon src/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,10 @@
   "homepage": "https://github.com/MatthewYee92/react-checkout-page#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^1.19.1",
     "react": "^16.8.6",
-    "react-avatar-editor": "^11.0.4",
     "react-color": "^2.14.1",
     "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^1.1.5",
     "semantic-ui-css": "^2.3.3",
