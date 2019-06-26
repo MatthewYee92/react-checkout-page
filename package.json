@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MatthewYee92/react-checkout-page#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^16.8.6",
     "react-avatar-editor": "^11.0.4",
     "react-color": "^2.14.1",
