@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 
   db.connection.query("SELECT * FROM table", function(err, results) {
     if(err) return console.log(err)
-    console.log(results[0].groceryitems);
+    console.log(results[0]);
     console.log('get connection working')
     res.send(results);
   });
