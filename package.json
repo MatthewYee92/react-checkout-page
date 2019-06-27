@@ -22,6 +22,7 @@
   "homepage": "https://github.com/MatthewYee92/react-checkout-page#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mysql": "^2.17.1",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-color": "^2.14.1",

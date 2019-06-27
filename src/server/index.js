@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   console.log("post success");
-  db.connection.query("INSERT into items () VALUES ()", function(err, results) {
+  db.connection.query("INSERT into table () VALUES ()", function(err, results) {
     if(err) return console.log(err)
     console.log('post connection working')
     res.send(results);
